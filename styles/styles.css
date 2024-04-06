@@ -11,7 +11,7 @@ body {
   text-align: center;
   display: grid;
   grid-template-rows:  2fr 4fr 2fr;
-  grid-template-columns: 100px 800px 100px ;
+  grid-template-columns: 100px 920px 100px ;
   grid-template-areas: "headerl header headerr" "sidebar-left main sidebar-right" "footer footer footer";
   justify-content: space-evenly;
   align-items: center;
@@ -49,13 +49,15 @@ body {
 
 #photo{
   float: left;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
+
+  padding: 1.4rem;
 }
 
 .about{
+  align-self: center;
   text-align: left;
   text-indent: 1rem;
+  padding: 0.5rem;
 }
 
 #footer{
@@ -166,6 +168,9 @@ nav {
     align-items: center;
     }
     
+  h2{
+      display: none;
+  }
   ul {
     width: 100%;
     margin-bottom: 1em;
@@ -194,7 +199,7 @@ nav {
 @media (max-width: 768px) {
 
   body{
-    grid-template-rows: 2fr 800px 2fr;
+    grid-template-rows: 2fr 900px 2fr;
   }
 
   .sections{
