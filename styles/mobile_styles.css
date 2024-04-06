@@ -3,12 +3,12 @@
 }
   
 body {
+  width: 100vw;
+  height: 100vh;
   background: #d7d9df no-repeat fixed center;
   font-size: 1.2rem;
   font-family: sans-serif;
   text-align: center;
-  max-width: 2000px;
-  height: 100%;
   display: grid;
   grid-template-rows:  2fr 4fr 2fr;
   grid-template-columns: 100px 800px 100px ;
