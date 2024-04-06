@@ -28,9 +28,7 @@ body {
 }
   
 .sections{
-  max-width: 1000px;
-  min-width: 400px;
-  border: 100px;
+  
   padding: 10px;
   margin: auto;
   overflow: auto;
@@ -195,6 +193,7 @@ nav {
 @media (max-width: 768px) {
 
   .sections{
+    font-size: 1.5rem;
     flex-direction: row;
   }
 
