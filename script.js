@@ -1,17 +1,15 @@
-document.getElementById('mySVG').addEventListener('mouseenter', function() {
-  // Adjust everything to the center of the SVG
-  var svgWidth = this.getAttribute('width');
-  var svgHeight = this.getAttribute('height');
-  var centerX = svgWidth / 2;
-  var centerY = svgHeight / 2;
+const svgElement = document.getElementById('mySVG');
 
-  // Adjust rectangle
-  var rect = document.getElementById('rect');
-  rect.setAttribute('x', centerX - 74.5);
-  rect.setAttribute('y', centerY - 75);
+// Function to pause animations
+function pauseAnimations() {
+  svgElement.pauseAnimations();
+}
 
-  // Adjust circle
-  var circle = document.getElementById('circle');
-  circle.setAttribute('cx', centerX);
-  circle.setAttribute('cy', centerY);
-});
+// Function to resume animations
+function resumeAnimations() {
+  svgElement.unpauseAnimations();
+}
+
+// Add event listener for mouse hover
+svgElement.addEventListener('mouseenter', pauseAnimations);
+svgElement.addEventListener('mouseleave', resumeAnimations);
