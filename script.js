@@ -1,28 +1,17 @@
-const svgElement = document.getElementById('mySVG');
-const shapes = svgElement.querySelectorAll('.layer > *');
+document.getElementById('mySVG').addEventListener('mouseenter', function() {
+  // Adjust everything to the center of the SVG
+  var svgWidth = this.getAttribute('width');
+  var svgHeight = this.getAttribute('height');
+  var centerX = svgWidth / 2;
+  var centerY = svgHeight / 2;
 
-svgElement.addEventListener('mouseover', () => {
-    // Get the SVG bounding box
-    const svgRect = svgElement.getBoundingClientRect();
-    const svgCenterX = svgRect.width / 2;
-    const svgCenterY = svgRect.height / 2;
+  // Adjust rectangle
+  var rect = document.getElementById('rect');
+  rect.setAttribute('x', centerX - 74.5);
+  rect.setAttribute('y', centerY - 75);
 
-    shapes.forEach(shape => {
-        // Get the bounding box of each shape
-        const shapeRect = shape.getBBox();
-        
-        // Calculate translation values to move each shape to the center
-        const translateX = svgCenterX - (shapeRect.x + shapeRect.width / 2);
-        const translateY = svgCenterY - (shapeRect.y + shapeRect.height / 2);
-
-        // Apply translation to each shape
-        shape.setAttribute('transform', `translate(${translateX}, ${translateY})`);
-    });
-});
-
-svgElement.addEventListener('mouseout', () => {
-    // Reset transformations on mouseout
-    shapes.forEach(shape => {
-        shape.removeAttribute('transform');
-    });
+  // Adjust circle
+  var circle = document.getElementById('circle');
+  circle.setAttribute('cx', centerX);
+  circle.setAttribute('cy', centerY);
 });

@@ -29,14 +29,26 @@
 
     <section class="sections">
         <h2>EDUCATION</h2>
-        <svg id="mySVG" width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">           
+        <p class="about">
+            In addition to my focus on IT certifications and seminar attendance, my educational foundation lies in mathematics.
+        </p>
+        <svg id="mySVG" width="640" height="300" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">           
             <g class="layer">
-             <path d="m-111.45,59.71l0,-2l2,0l0,2l-2,0z" fill="#7f7f7f" id="svg_13" stroke="#000000" transform="matrix(1 0 0 1 0 0)"/>
-             <rect fill="#bfbfbf" height="149" id="svg_15" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="149" x="5" y="250"/>
-             <path d="m252.73,398.37l74,-149.63l74,149.63z" fill="#7f7f7f" id="svg_16" stroke="#000000" transform="matrix(1 0 0 1 0 0)"/>
-             <circle cx="226" cy="295.5" fill="#3f3f3f" id="svg_17" r="44.29" stroke="#000000"/>
+                <path d="m-111.45,59.71l0,-2l2,0l0,2l-2,0z" fill="#7f7f7f" id="svg_13" stroke="#000000" transform="matrix(1 0 0 1 0 0)"/>
+                <rect fill="#bfbfbf" height="150" id="svg_15" stroke="#000000" transform="matrix(1 0 0 1 0 0)" width="149" x="130" y="100">
+                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 204 175" to="360 204 175" dur="5s" repeatCount="indefinite" />
+                </rect>
+                <path d="m252.73,398.37l74,-149.63l74,149.63z" fill="#7f7f7f" id="svg_16" stroke="#000000" transform="translate(0,-150)">
+                    <animateTransform attributeName="transform" attributeType="XML" type="translate" from="-200 -130" to="700 -130" dur="8s" repeatCount="indefinite" />
+                </path>
+                <circle cx="226" cy="45.5" fill="#3f3f3f" id="svg_17" r="44.29" stroke="#000000">
+                    <animate attributeName="cy" values="50;100;50" keyTimes="0;0.5;1" dur="2s" repeatCount="indefinite" />
+                    <animate attributeName="cx" begin="0s" dur="8s" from="-10%" to="110%" repeatCount="indefinite" />
+                </circle>
             </g>
         </svg>
+        
+        
     </section>
     <footer id="footer">
         <h4> © 2024 EVANKOS</h4>
