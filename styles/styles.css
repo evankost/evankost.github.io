@@ -158,8 +158,26 @@ nav {
 .navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
- 
-  
+
+.sections a:link {
+  color: rgb(40,40,40);
+}
+
+.sections a:visited {
+  color: rgb(130,130,130);
+}
+
+
+.sections a:hover {
+  color: rgb(100,100,100);
+}
+
+
+#mySVG {
+  width: 640px;
+  height: 480px;
+}
+
 @media (min-width: 48em) {
     
   nav {
