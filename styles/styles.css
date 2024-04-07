@@ -32,7 +32,7 @@ body {
   border: 100px;
   padding: 10px;
   margin: auto;
-  overflow: auto;
+  overflow:visible;
   border-radius: 5px;
   border: 3px solid #000;
   
