@@ -170,12 +170,24 @@ nav {
   color: rgb(100,100,100);
 }
 
+@keyframes move {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(100px); }
+    }
 
+     .moving {
+      animation: move 2s infinite alternate; /* Play animation infinitely */
+    }
+
+    /* Pause the animation when the parent is hovered */
+    .paused .moving {
+      animation-play-state: paused;
+    }
 #mySVG {
-
   width: 100%;
-  height: 300px;
+  height: 300px;  
 }
+
 
 @media (min-width: 48em) {
     
@@ -215,9 +227,23 @@ nav {
 @media (max-width: 768px) {
 
   body{
-    grid-template-rows: 2fr 1200px 2fr;
-    grid-template-columns: 1fr 500px 1fr;
+    1grid-template-rows: 2fr 1200px 2fr;
+    1grid-template-columns: 1fr 500px 1fr;
+    grid-template-rows: inherit;
+    grid-template-columns: inherit;
+    margin:0px;
+    display:inherit;
+    width:98%;
   }
+
+  #photo{
+    padding:0px;
+  }
+
+    #photo img{
+    width:100%;
+  }
+
 
   .sections{
 
