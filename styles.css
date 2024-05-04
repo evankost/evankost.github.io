@@ -137,7 +137,7 @@ nav {
 }
 
 .navbar .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: 300px;
 }
 
 .navbar .menu-btn:checked ~ .menu-icon .navicon {
@@ -170,19 +170,6 @@ nav {
   color: rgb(100,100,100);
 }
 
-@keyframes move {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(100px); }
-    }
-
-     .moving {
-      animation: move 2s infinite alternate; /* Play animation infinitely */
-    }
-
-    /* Pause the animation when the parent is hovered */
-    .paused .moving {
-      animation-play-state: paused;
-    }
 #mySVG {
   width: 100%;
   height: 300px;  
@@ -227,8 +214,6 @@ nav {
 @media (max-width: 768px) {
 
   body{
-    1grid-template-rows: 2fr 1200px 2fr;
-    1grid-template-columns: 1fr 500px 1fr;
     grid-template-rows: inherit;
     grid-template-columns: inherit;
     margin:0px;
